@@ -1,0 +1,5 @@
+C:\projects\AuthnSpike\AuthnSpike.Lib\bin\Debug\AuthnSpike.Lib.dll
+C:\projects\AuthnSpike\AuthnSpike.Lib\bin\Debug\AuthnSpike.Lib.pdb
+C:\projects\AuthnSpike\AuthnSpike.Lib\obj\Debug\AuthnSpike.Lib.csprojResolveAssemblyReference.cache
+C:\projects\AuthnSpike\AuthnSpike.Lib\obj\Debug\AuthnSpike.Lib.dll
+C:\projects\AuthnSpike\AuthnSpike.Lib\obj\Debug\AuthnSpike.Lib.pdb

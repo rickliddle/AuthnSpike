@@ -1,0 +1,14 @@
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\Default.srprofile
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\AuthSpike.Specs.dll.config
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\AuthSpike.Specs.dll
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\AuthSpike.Specs.pdb
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\AuthnSpike.Lib.dll
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\SpecRun.SpecFlowPlugin.dll
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\TechTalk.SpecFlow.dll
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\TechTalk.SpecRun.dll
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\AuthnSpike.Lib.pdb
+C:\projects\AuthnSpike\AuthSpike.Specs\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.xml
+C:\projects\AuthnSpike\AuthSpike.Specs\obj\Debug\AuthSpike.Specs.csprojResolveAssemblyReference.cache
+C:\projects\AuthnSpike\AuthSpike.Specs\obj\Debug\AuthSpike.Specs.dll
+C:\projects\AuthnSpike\AuthSpike.Specs\obj\Debug\AuthSpike.Specs.pdb
