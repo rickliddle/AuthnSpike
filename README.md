@@ -1,2 +1,2 @@
 # AuthnSpike
-Spike/POC for BDD authentication manager
+Spike/POC for BDD authentication manager using SpecFlow
