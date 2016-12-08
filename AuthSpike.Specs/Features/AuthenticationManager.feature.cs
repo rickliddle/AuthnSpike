@@ -88,7 +88,7 @@ this.ScenarioSetup(scenarioInfo);
 #line 13
  testRunner.Then("I should receive a token", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 14
- testRunner.And("an exception should not be thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.But("an exception should not be thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "But ");
 #line hidden
             this.ScenarioCleanup();
         }

@@ -20,15 +20,22 @@ namespace AuthnSpike.Specs.Steps
         public void WhenICallAuthenticateWithTheseCredentials(Table table)
         {
             var authenticationCredentials = table.CreateInstance<AuthenticationCredentials>();
-            var authenticationManager = ScenarioContext.Current.Get<IAuthenticationManager>();
-            try
+            IAuthenticationManager authenticationManager;
+            if (ScenarioContext.Current.TryGetValue<IAuthenticationManager>(out authenticationManager))
             {
-                var authenticationToken = authenticationManager.Authenticate(authenticationCredentials);
-                ScenarioContext.Current.Set<AuthenticationToken>(authenticationToken);
+                try
+                {
+                    var authenticationToken = authenticationManager.Authenticate(authenticationCredentials);
+                    ScenarioContext.Current.Set<AuthenticationToken>(authenticationToken);
+                }
+                catch (Exception ex)
+                {
+                    ScenarioContext.Current.Set<Exception>(ex);
+                }
             }
-            catch (Exception ex)
+            else
             {
-                ScenarioContext.Current.Set<Exception>(ex);
+                Assert.Fail("Failed getting authenticationManager");
             }
         }
 

@@ -11,7 +11,7 @@ Scenario: Authenticate valid credentials
 		| Username | username |
 		| Password | password |
 	Then I should receive a token
-	And an exception should not be thrown
+	But an exception should not be thrown
 
 @authN
 Scenario: Authenticate invalid credentials
