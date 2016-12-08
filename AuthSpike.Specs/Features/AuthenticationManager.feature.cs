@@ -17,8 +17,8 @@ namespace AuthSpike.Specs.Features
     
     [System.CodeDom.Compiler.GeneratedCodeAttribute("TechTalk.SpecFlow", "2.1.0.0")]
     [System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
-    [TechTalk.SpecRun.FeatureAttribute("AuthenticationManager", Description="\tIn order to access the system\r\n\tAs a valid user\r\n\tI need my credentials verified" +
-        " so that I can get a token", SourceFile="Features\\AuthenticationManager.feature", SourceLine=0)]
+    [TechTalk.SpecRun.FeatureAttribute("AuthenticationManager", Description="\tAs a valid user\r\n\tI want to have my credentials verified \r\n\tBecause I need a tok" +
+        "en to access the system", SourceFile="Features\\AuthenticationManager.feature", SourceLine=0)]
     public partial class AuthenticationManagerFeature
     {
         
@@ -31,8 +31,8 @@ namespace AuthSpike.Specs.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "AuthenticationManager", "\tIn order to access the system\r\n\tAs a valid user\r\n\tI need my credentials verified" +
-                    " so that I can get a token", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "AuthenticationManager", "\tAs a valid user\r\n\tI want to have my credentials verified \r\n\tBecause I need a tok" +
+                    "en to access the system", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -87,19 +87,21 @@ this.ScenarioSetup(scenarioInfo);
  testRunner.When("I call authenticate with these credentials", ((string)(null)), table1, "When ");
 #line 13
  testRunner.Then("I should receive a token", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 14
+ testRunner.And("an exception should not be thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
             this.ScenarioCleanup();
         }
         
         [TechTalk.SpecRun.ScenarioAttribute("Authenticate invalid credentials", new string[] {
-                "authN"}, SourceLine=15)]
+                "authN"}, SourceLine=16)]
         public virtual void AuthenticateInvalidCredentials()
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Authenticate invalid credentials", new string[] {
                         "authN"});
-#line 16
-this.ScenarioSetup(scenarioInfo);
 #line 17
+this.ScenarioSetup(scenarioInfo);
+#line 18
  testRunner.Given("I have an instance of the authentication manager", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
             TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -111,10 +113,12 @@ this.ScenarioSetup(scenarioInfo);
             table2.AddRow(new string[] {
                         "Password",
                         "badpass"});
-#line 18
+#line 19
  testRunner.When("I call authenticate with these credentials", ((string)(null)), table2, "When ");
-#line 22
+#line 23
  testRunner.Then("An exception should be thrown", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+#line 24
+ testRunner.But("I should not receive a token", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "But ");
 #line hidden
             this.ScenarioCleanup();
         }
