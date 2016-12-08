@@ -68,7 +68,7 @@
       <DependentUpon>AuthenticationManager.feature</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Specs\AuthenticationManagerSteps.cs" />
+    <Compile Include="Steps\AuthenticationManagerSteps.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
